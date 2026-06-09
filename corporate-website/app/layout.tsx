@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Synvoric | Frontend & AI Developer Staffing",
+  title: "TechCo | Frontend & AI Developer Staffing",
   description:
-    "Synvoric is a professional staffing company specializing in Frontend Developers, AI Engineers, and full-stack talent for web and mobile app development.",
+    "TechCo is a professional staffing company specializing in Frontend Developers, AI Engineers, and full-stack talent for web and mobile app development.",
   keywords: [
     "frontend developers",
     "AI developers",
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     "React developers",
     "mobile app development",
     "staff augmentation",
-    "Synvoric",
+    "TechCo",
   ],
   openGraph: {
-    title: "Synvoric | Frontend & AI Developer Staffing",
+    title: "TechCo | Frontend & AI Developer Staffing",
     description:
       "Staff augmentation and dedicated teams for frontend, AI, web, and mobile development.",
-    url: "https://synvoric.com",
-    siteName: "Synvoric",
+    url: "https://techco.dev",
+    siteName: "TechCo",
     type: "website",
   },
 };

@@ -3,7 +3,7 @@
 export function DeckToolbar() {
   return (
     <div className="deck-toolbar">
-      <span>Synvoric · Capability Overview</span>
+      <span>TechCo · Capability Overview</span>
       <div>
         <a href="/">← Website</a>
         <button type="button" onClick={() => window.print()}>
@@ -17,7 +17,7 @@ export function DeckToolbar() {
 function SlideFooter({ n, total = 12 }: { n: number; total?: number }) {
   return (
     <div className="slide-footer">
-      <span>Synvoric · Confidential</span>
+      <span>TechCo · Confidential</span>
       <span className="slide-num">
         {String(n).padStart(2, "0")} / {String(total).padStart(2, "0")}
       </span>

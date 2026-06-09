@@ -10,7 +10,7 @@ export function ClientMarquee() {
         {track.map((client, i) => (
           <div
             key={`${client.name}-${i}`}
-            className="group flex h-28 w-56 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 shadow-sm transition-all duration-300 hover:border-synvoric-blue/20 hover:shadow-md"
+            className="group flex h-28 w-56 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 shadow-sm transition-all duration-300 hover:border-brand-blue/20 hover:shadow-md"
           >
             <Image
               src={client.logo}

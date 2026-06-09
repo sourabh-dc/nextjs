@@ -8,7 +8,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        synvoric: {
+        techco: {
           blue: "#0066FF",
           navy: "#0A1628",
           slate: "#1E293B",

@@ -25,10 +25,10 @@ export function ServicesSection() {
       <section id="services" className="py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-widest text-synvoric-blue">
+            <p className="text-sm font-semibold uppercase tracking-widest text-brand-blue">
               What We Offer
             </p>
-            <h2 className="mt-3 text-3xl font-bold text-synvoric-navy md:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold text-brand-navy md:text-4xl">
               Staffing &amp; Development Solutions
             </h2>
             <p className="mt-4 text-lg text-slate-600">
@@ -43,15 +43,15 @@ export function ServicesSection() {
                 key={service.id}
                 type="button"
                 onClick={() => setActive(service)}
-                className="group flex cursor-pointer flex-col rounded-2xl border border-slate-200 bg-white p-7 text-left transition-all duration-300 hover:-translate-y-1 hover:border-synvoric-blue/40 hover:shadow-xl hover:shadow-synvoric-blue/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-synvoric-blue"
+                className="group flex cursor-pointer flex-col rounded-2xl border border-slate-200 bg-white p-7 text-left transition-all duration-300 hover:-translate-y-1 hover:border-brand-blue/40 hover:shadow-xl hover:shadow-brand-blue/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
               >
                 <div className="mb-4 flex items-center justify-between">
-                  <div className="h-1 w-10 rounded-full bg-synvoric-blue transition-all duration-300 group-hover:w-16" />
-                  <span className="rounded-full bg-synvoric-blue/10 px-3 py-1 text-xs font-semibold text-synvoric-blue opacity-0 transition-opacity group-hover:opacity-100">
+                  <div className="h-1 w-10 rounded-full bg-brand-blue transition-all duration-300 group-hover:w-16" />
+                  <span className="rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-semibold text-brand-blue opacity-0 transition-opacity group-hover:opacity-100">
                     Learn more →
                   </span>
                 </div>
-                <h3 className="text-lg font-semibold text-synvoric-navy">
+                <h3 className="text-lg font-semibold text-brand-navy">
                   {service.title}
                 </h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
@@ -81,18 +81,18 @@ export function ServicesSection() {
           aria-labelledby="service-modal-title"
         >
           <div
-            className="absolute inset-0 bg-synvoric-navy/60 backdrop-blur-sm animate-fade-in"
+            className="absolute inset-0 bg-brand-navy/60 backdrop-blur-sm animate-fade-in"
             onClick={() => setActive(null)}
           />
           <div className="animate-modal-up relative max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white shadow-2xl">
             <div className="sticky top-0 flex items-start justify-between border-b border-slate-100 bg-white px-7 py-5">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-synvoric-blue">
+                <p className="text-xs font-semibold uppercase tracking-widest text-brand-blue">
                   Service Detail
                 </p>
                 <h3
                   id="service-modal-title"
-                  className="mt-1 text-xl font-bold text-synvoric-navy"
+                  className="mt-1 text-xl font-bold text-brand-navy"
                 >
                   {active.title}
                 </h3>
@@ -113,13 +113,13 @@ export function ServicesSection() {
               <p className="leading-relaxed text-slate-600">{active.overview}</p>
 
               <div>
-                <h4 className="mb-3 text-sm font-semibold uppercase tracking-wide text-synvoric-navy">
+                <h4 className="mb-3 text-sm font-semibold uppercase tracking-wide text-brand-navy">
                   What We Deliver
                 </h4>
                 <ul className="space-y-2">
                   {active.highlights.map((item) => (
                     <li key={item} className="flex items-start gap-2.5 text-sm text-slate-600">
-                      <svg className="mt-0.5 h-4 w-4 shrink-0 text-synvoric-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <svg className="mt-0.5 h-4 w-4 shrink-0 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                       </svg>
                       {item}
@@ -129,14 +129,14 @@ export function ServicesSection() {
               </div>
 
               <div>
-                <h4 className="mb-3 text-sm font-semibold uppercase tracking-wide text-synvoric-navy">
+                <h4 className="mb-3 text-sm font-semibold uppercase tracking-wide text-brand-navy">
                   Roles We Staff
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {active.roles.map((role) => (
                     <span
                       key={role}
-                      className="rounded-full border border-synvoric-blue/20 bg-synvoric-blue/5 px-3 py-1 text-xs font-medium text-synvoric-blue"
+                      className="rounded-full border border-brand-blue/20 bg-brand-blue/5 px-3 py-1 text-xs font-medium text-brand-blue"
                     >
                       {role}
                     </span>
@@ -145,8 +145,8 @@ export function ServicesSection() {
               </div>
 
               <a
-                href={`mailto:contact@synvoric.com?subject=${encodeURIComponent(active.title + " — Synvoric Inquiry")}`}
-                className="block w-full rounded-lg bg-synvoric-blue py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+                href={`mailto:contact@techco.dev?subject=${encodeURIComponent(active.title + " — TechCo Inquiry")}`}
+                className="block w-full rounded-lg bg-brand-blue py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-blue-700"
               >
                 Request This Service
               </a>

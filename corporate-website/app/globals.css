@@ -7,11 +7,11 @@ html {
 }
 
 body {
-  @apply bg-white text-synvoric-navy antialiased;
+  @apply bg-white text-brand-navy antialiased;
 }
 
 ::selection {
-  @apply bg-synvoric-blue/20 text-synvoric-navy;
+  @apply bg-brand-blue/20 text-brand-navy;
 }
 
 @keyframes marquee {

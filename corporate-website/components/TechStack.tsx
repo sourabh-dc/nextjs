@@ -13,10 +13,10 @@ export function TechStack() {
   const active = techCategories.find((c) => c.id === activeId)!;
 
   return (
-    <section id="technologies" className="bg-synvoric-navy py-20 md:py-28">
+    <section id="technologies" className="bg-brand-navy py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-synvoric-blue">
+          <p className="text-sm font-semibold uppercase tracking-widest text-brand-blue">
             Tech Stack
           </p>
           <h2 className="mt-3 text-3xl font-bold text-white md:text-4xl">
@@ -32,8 +32,8 @@ export function TechStack() {
               onClick={() => setActiveId(cat.id)}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition-all duration-300 ${
                 activeId === cat.id
-                  ? "bg-synvoric-blue text-white shadow-lg shadow-synvoric-blue/30"
-                  : "border border-white/15 text-slate-300 hover:border-synvoric-blue/50 hover:text-white"
+                  ? "bg-brand-blue text-white shadow-lg shadow-brand-blue/30"
+                  : "border border-white/15 text-slate-300 hover:border-brand-blue/50 hover:text-white"
               }`}
             >
               {cat.label}
@@ -48,7 +48,7 @@ export function TechStack() {
           {active.items.map((tech, i) => (
             <div
               key={tech.name}
-              className="tech-logo-card group flex flex-col items-center gap-3 rounded-2xl border border-white/8 bg-white/5 p-5 transition-all duration-300 hover:-translate-y-2 hover:border-synvoric-blue/40 hover:bg-white/10 hover:shadow-lg hover:shadow-synvoric-blue/10"
+              className="tech-logo-card group flex flex-col items-center gap-3 rounded-2xl border border-white/8 bg-white/5 p-5 transition-all duration-300 hover:-translate-y-2 hover:border-brand-blue/40 hover:bg-white/10 hover:shadow-lg hover:shadow-brand-blue/10"
               style={{ animationDelay: `${i * 60}ms` }}
             >
               <div className="tech-logo-float flex h-14 w-14 items-center justify-center rounded-xl bg-white/10 p-2.5 transition-transform duration-300 group-hover:scale-110">

@@ -10,7 +10,7 @@ import {
 
 const TOTAL = 12;
 
-const whySynvoric = [
+const whyUs = [
   {
     title: "Rigorous Vetting",
     body: "Every developer passes technical assessments, live coding reviews, and communication screening before placement.",
@@ -58,10 +58,10 @@ export default function CapabilityDeck() {
         {/* 01 — Cover */}
         <div className="slide slide-cover">
           <div className="slide-inner">
-            <Image src="/logo.png" alt="Synvoric" width={280} height={96} priority />
+            <Image src="/logo.png" alt="TechCo" width={280} height={96} priority />
             <p className="cover-tagline">AI · Data · Engineering · Solutions</p>
             <p className="cover-subtitle">Capability Overview</p>
-            <p className="cover-date">May 2026 · synvoric.com</p>
+            <p className="cover-date">May 2026 · techco.dev</p>
           </div>
           <SlideFooter n={1} total={TOTAL} />
         </div>
@@ -75,7 +75,7 @@ export default function CapabilityDeck() {
             <div className="two-col">
               <div className="slide-body">
                 <p>
-                  <strong>Synvoric</strong> is a professional IT staffing company
+                  <strong>TechCo</strong> is a professional IT staffing company
                   specializing in frontend developers and AI/ML engineers. We
                   partner with enterprises and growth-stage companies to deliver
                   vetted engineering talent for web applications, mobile apps, and
@@ -266,14 +266,14 @@ export default function CapabilityDeck() {
           <SlideFooter n={9} total={TOTAL} />
         </div>
 
-        {/* 10 — Why Synvoric */}
+        {/* 10 — Why TechCo */}
         <div className="slide">
           <div className="slide-inner">
             <p className="slide-eyebrow">Differentiators</p>
-            <h2 className="slide-headline">Why Synvoric</h2>
+            <h2 className="slide-headline">Why TechCo</h2>
             <div className="slide-rule" />
             <div className="deck-grid-2">
-              {whySynvoric.map((p) => (
+              {whyUs.map((p) => (
                 <div key={p.title} className="pillar">
                   <h4>{p.title}</h4>
                   <p>{p.body}</p>
@@ -319,8 +319,8 @@ export default function CapabilityDeck() {
                 Share your requirements and we&apos;ll respond within one business
                 day with matched candidates.
               </p>
-              <p className="contact-email">contact@synvoric.com</p>
-              <p className="contact-web">www.synvoric.com</p>
+              <p className="contact-email">contact@techco.dev</p>
+              <p className="contact-web">www.techco.dev</p>
               <div className="contact-detail">
                 {engagementModels.map((m) => (
                   <div key={m.title}>

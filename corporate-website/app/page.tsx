@@ -20,7 +20,7 @@ export default function HomePage() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo.png"
-              alt="Synvoric"
+              alt="TechCo"
               width={140}
               height={48}
               className="h-10 w-auto"
@@ -32,7 +32,7 @@ export default function HomePage() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 transition-colors hover:text-synvoric-blue"
+                className="text-sm font-medium text-slate-600 transition-colors hover:text-brand-blue"
               >
                 {link.label}
               </a>
@@ -40,7 +40,7 @@ export default function HomePage() {
           </nav>
           <a
             href="#contact"
-            className="rounded-lg bg-synvoric-blue px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg hover:shadow-synvoric-blue/25"
+            className="rounded-lg bg-brand-blue px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg hover:shadow-brand-blue/25"
           >
             Hire Developers
           </a>
@@ -50,33 +50,33 @@ export default function HomePage() {
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white pt-28 pb-16 md:pt-36 md:pb-24">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-synvoric-blue/8 via-transparent to-transparent" />
-          <div className="absolute -right-32 top-20 h-96 w-96 rounded-full bg-synvoric-blue/5 blur-3xl" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-blue/8 via-transparent to-transparent" />
+          <div className="absolute -right-32 top-20 h-96 w-96 rounded-full bg-brand-blue/5 blur-3xl" />
 
           <div className="relative mx-auto max-w-6xl px-6">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="animate-fade-up mb-4 text-sm font-semibold uppercase tracking-widest text-synvoric-blue">
+              <p className="animate-fade-up mb-4 text-sm font-semibold uppercase tracking-widest text-brand-blue">
                 Professional IT Staffing
               </p>
-              <h1 className="animate-fade-up delay-100 text-4xl font-bold leading-tight tracking-tight text-synvoric-navy md:text-5xl lg:text-6xl">
+              <h1 className="animate-fade-up delay-100 text-4xl font-bold leading-tight tracking-tight text-brand-navy md:text-5xl lg:text-6xl">
                 Frontend &amp;{" "}
-                <span className="text-synvoric-blue">AI Developer</span> Staffing
+                <span className="text-brand-blue">AI Developer</span> Staffing
               </h1>
               <p className="animate-fade-up delay-200 mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
-                Synvoric places vetted frontend engineers and AI specialists
+                TechCo places vetted frontend engineers and AI specialists
                 for web apps, mobile (iOS &amp; Android), and full product
                 delivery — on your timeline.
               </p>
               <div className="animate-fade-up delay-300 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <a
                   href="#contact"
-                  className="animate-pulse-glow inline-flex items-center justify-center rounded-lg bg-synvoric-blue px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-synvoric-blue/25 transition-all hover:bg-blue-700"
+                  className="animate-pulse-glow inline-flex items-center justify-center rounded-lg bg-brand-blue px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-brand-blue/25 transition-all hover:bg-blue-700"
                 >
                   Hire Developers
                 </a>
                 <a
                   href="#services"
-                  className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-8 py-3.5 text-base font-semibold text-synvoric-navy transition-all hover:border-synvoric-blue hover:text-synvoric-blue"
+                  className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-8 py-3.5 text-base font-semibold text-brand-navy transition-all hover:border-brand-blue hover:text-brand-blue"
                 >
                   Explore Services
                 </a>
@@ -89,7 +89,7 @@ export default function HomePage() {
                   key={stat.label}
                   className="rounded-2xl border border-slate-100 bg-white/80 p-5 text-center shadow-sm backdrop-blur transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
                 >
-                  <div className="text-3xl font-bold text-synvoric-navy md:text-4xl">
+                  <div className="text-3xl font-bold text-brand-navy md:text-4xl">
                     {stat.value}
                   </div>
                   <div className="mt-1 text-sm text-slate-500">{stat.label}</div>
@@ -102,7 +102,7 @@ export default function HomePage() {
         {/* Clients */}
         <section id="clients" className="border-y border-slate-100 bg-slate-50 py-14">
           <div className="mx-auto max-w-6xl px-6">
-            <h2 className="text-center text-2xl font-bold text-synvoric-navy md:text-3xl">
+            <h2 className="text-center text-2xl font-bold text-brand-navy md:text-3xl">
               Trusted by Leading Businesses
             </h2>
           </div>
@@ -117,16 +117,16 @@ export default function HomePage() {
         {/* Process — compact */}
         <section className="border-t border-slate-100 bg-slate-50 py-16">
           <div className="mx-auto max-w-6xl px-6">
-            <h2 className="text-center text-2xl font-bold text-synvoric-navy">
+            <h2 className="text-center text-2xl font-bold text-brand-navy">
               How We Work
             </h2>
             <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4">
               {processSteps.map((step) => (
                 <div key={step.step} className="text-center">
-                  <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-synvoric-blue text-sm font-bold text-white">
+                  <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-brand-blue text-sm font-bold text-white">
                     {step.step}
                   </div>
-                  <h3 className="font-semibold text-synvoric-navy">{step.title}</h3>
+                  <h3 className="font-semibold text-brand-navy">{step.title}</h3>
                   <p className="mt-1 text-sm text-slate-500">{step.description}</p>
                 </div>
               ))}
@@ -138,7 +138,7 @@ export default function HomePage() {
         <section id="contact" className="py-20 md:py-28">
           <div className="mx-auto max-w-6xl px-6">
             <div className="mx-auto max-w-2xl rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-10 text-center shadow-sm md:p-14">
-              <h2 className="text-3xl font-bold text-synvoric-navy md:text-4xl">
+              <h2 className="text-3xl font-bold text-brand-navy md:text-4xl">
                 Ready to Build Your Team?
               </h2>
               <p className="mt-4 text-lg text-slate-600">
@@ -146,15 +146,15 @@ export default function HomePage() {
                 day with matched candidates.
               </p>
               <a
-                href="mailto:contact@synvoric.com"
-                className="mt-6 inline-flex items-center gap-2 text-lg font-semibold text-synvoric-blue transition-colors hover:text-blue-700"
+                href="mailto:contact@techco.dev"
+                className="mt-6 inline-flex items-center gap-2 text-lg font-semibold text-brand-blue transition-colors hover:text-blue-700"
               >
-                contact@synvoric.com
+                contact@techco.dev
               </a>
               <div className="mt-8">
                 <a
-                  href="mailto:contact@synvoric.com?subject=Developer%20Staffing%20Inquiry%20-%20Synvoric"
-                  className="inline-flex items-center justify-center rounded-lg bg-synvoric-blue px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg hover:shadow-synvoric-blue/25"
+                  href="mailto:contact@techco.dev?subject=Developer%20Staffing%20Inquiry"
+                  className="inline-flex items-center justify-center rounded-lg bg-brand-blue px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg hover:shadow-brand-blue/25"
                 >
                   Get in Touch
                 </a>
@@ -168,19 +168,19 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 md:flex-row">
           <Image
             src="/logo.png"
-            alt="Synvoric"
+            alt="TechCo"
             width={120}
             height={40}
             className="h-8 w-auto opacity-80"
           />
           <p className="text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} Synvoric · synvoric.com
+            &copy; {new Date().getFullYear()} TechCo · techco.dev
           </p>
           <a
-            href="mailto:contact@synvoric.com"
-            className="text-sm text-slate-500 transition-colors hover:text-synvoric-blue"
+            href="mailto:contact@techco.dev"
+            className="text-sm text-slate-500 transition-colors hover:text-brand-blue"
           >
-            contact@synvoric.com
+            contact@techco.dev
           </a>
         </div>
       </footer>

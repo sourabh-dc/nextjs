@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./deck.css";
 
 export const metadata: Metadata = {
-  title: "Synvoric | Capability Overview",
-  description: "Synvoric capability deck — Frontend & AI developer staffing.",
+  title: "TechCo | Capability Overview",
+  description: "TechCo capability deck — Frontend & AI developer staffing.",
   robots: { index: false, follow: false },
 };
 
