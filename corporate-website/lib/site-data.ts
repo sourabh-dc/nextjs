@@ -216,15 +216,6 @@ export const techCategories: TechCategory[] = [
   },
 ];
 
-export const clients = [
-  { name: "Chandrawat Concrete Works", logo: "/clients/client-concrete.png" },
-  { name: "Firangi Cafe & Bar", logo: "/clients/client-firangi.png" },
-  { name: "The Grand Shaurya", logo: "/clients/client-grand-shaurya.png" },
-  { name: "Techturtle", logo: "/clients/client-techturtle.png" },
-  { name: "SIG SIGMA", logo: "/clients/client-sig-sigma.png" },
-  { name: "Tripolic", logo: "/clients/client-tripolic.jpeg" },
-  { name: "Jyoti Creative Cards", logo: "/clients/client-jyoti.jpeg" },
-];
 
 export const stats = [
   { value: "50+", label: "Developers Placed" },
@@ -239,3 +230,5 @@ export const processSteps = [
   { step: "03", title: "Onboard", description: "Integrated in days." },
   { step: "04", title: "Support", description: "Ongoing oversight." },
 ];
+
+export const clients: { name: string; logo: string }[] = [];
